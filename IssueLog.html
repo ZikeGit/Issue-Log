@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/jquery-ui.css" />
+    <link rel="stylesheet" href="styles/jquery.dataTables.min.css" />
+    <style>
+   table {
+        width: 50%;
+        border-collapse: collapse;
+    }
+    
+    td, th  {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Stack Issue Tracker</h1>
+    <br />
+    <hr>
+    <h3>Add New Issue:</h3> <br />
+    <textarea name="text" id="txtArea"></textarea>
+    <br /> <br />
+    <div>
+        Severity <br />
+        <select id="level">
+            <option value=""></option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="Critical">Critical</option>
+        </select>
+    </div>
+
+    <br /> <br />
+    <div>
+        Assigned To: <br />
+        <input id="name" />
+        <br /> <br />
+    </div>
+
+    <br />
+    <button id="getInfo">Save</button>
+    <hr>
+    <p id="print"></p>
+    <table id="infoTable">
+
+    </table>
+
+
+
+    <script src="script/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="script/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="script/jquery-ui.js" type="text/javascript"></script>
+    <script src="script/IssueLog.js" type="text/javascript"></script>
+</body>
+
+</html>
